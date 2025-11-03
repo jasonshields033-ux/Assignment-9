@@ -73,3 +73,18 @@ network.add_friendship("Morgan", "Riley")
 network.add_friendship("Alex", "Taylor")
 
 # Print the network
+network.print_network()
+
+# Deisgn Memo
+# A graph is the ideal data structure for modeling a social network because it naturally represents relationships between entities.
+# Each person can be treated as a node, and each friendship as an edge connecting two nodes. 
+# This structure allows for efficient traversal, querying, and expansion — all critical for simulating real-world social dynamics.
+# Unlike a list, which only stores linear data, a graph supports complex, non-linear relationships. 
+# A tree structure, while hierarchical, fails to capture mutual connections and cyclical relationships common in social networks. 
+# For example, in a tree, a person could only have one “parent” node, which doesn’t reflect the bidirectional nature of friendships.
+# During implementation, I noticed that adding friends was straightforward using adjacency lists, but required careful checks to avoid duplicates or missing nodes. 
+# The add_friendship method had to validate both participants before creating a connection, which added robustness to the network. 
+# Printing the network was efficient, but formatting friend lists for readability required extra attention.
+# One trade-off is that while adjacency lists are memory-efficient and fast for sparse networks, they can become less performant if the network grows dense or requires frequent lookups. 
+# However, for this assignment’s scale, the structure was both intuitive and effective.
+# Overall, this project reinforced how graph theory applies to real-world systems and highlighted the importance of validating inputs and designing for scalability.
